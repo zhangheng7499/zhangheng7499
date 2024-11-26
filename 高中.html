@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>抽签选位置</title>
+
+  <style>
+ .coolButton {
+      background: linear-gradient(to right, #0074D9, #39CCCC);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+  .coolButton:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+
+  <style >
+    body{
+        background-image:url("E:/桌面/chouqian/fm1.jpg") ;
+        background-size: cover;
+      }   
+  </style>
+
+ <style>
+ .image-container {
+      display: flex;
+    }
+</style>
+
+</head>
+<body>
+  <marquee align="left" direction="right" scrollamount="10" scrolldelay="100" loop="infinite" width="100%" height="60px" bgcolor="yellow">
+  <p style="font-size: 30px;text-align: center ; vertical-align: top;line-height: 20px; color: red;">抽选任务位置环节</p>
+</marquee>
+
+
+ <script src="E:\桌面\chouqian\js/jq.js"></script>
+
+<!--
+
+
+-->
+
+<img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img3" style="width: 250px;position: absolute;top:90px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:120px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img4" style="width: 200;height: 170px;position: absolute;top:95px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:170px;left:1230px;"onclick="run2()">
+
+
+
+<script >
+    var timer2;
+  var open2 = false;
+  function stop(){
+    clearInterval(timer2);
+  }
+  function run2(){
+
+    if(!open2){
+      timer2 =setInterval(change2,50);
+      open2=true;
+
+      }else{
+      clearInterval(timer2);
+      open2=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img3").attr("src", "E:/桌面/chouqian/gaozhong/rw(7).jpg");
+      $("#img4").attr("src", "E:/桌面/chouqian/gaozhong/wz(7).jpg");
+      }
+    }
+    function change2(){
+      
+      var img3=$("#img3");
+      var img4=$("#img4");
+      var random3=Math.floor(Math.random()*7+1);
+      var random4=Math.floor(Math.random()*7+1);
+      var headImg3="E:/桌面/chouqian/gaozhong/rw("+random3+").jpg";
+      var headImg4="E:/桌面/chouqian/gaozhong/wz("+random4+").jpg";
+      $("#img3").attr("src", headImg3);
+      $("#img4").attr("src", headImg4);
+    }
+    </script>
+
+
+
+
+
+<img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img5" style="width: 250px;position: absolute;top:370px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:370px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img6" style="width: 200;height: 170px;position: absolute;top:370px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:430px;left:1230px;"onclick="run3()">
+
+
+
+<script >
+    var timer3;
+  var open3 = false;
+  function stop(){
+    clearInterval(timer3);
+  }
+  function run3(){
+
+    if(!open3){
+      timer3 =setInterval(change3,50);
+      open3=true;
+
+      }else{
+      clearInterval(timer3);
+      open3=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img5").attr("src", "E:/桌面/chouqian/gaozhong/rw(6).jpg");
+      $("#img6").attr("src", "E:/桌面/chouqian/gaozhong/wz(6).jpg");
+      }
+    }
+    function change3(){
+      
+      var img5=$("#img5");
+      var img6=$("#img6");
+      var random5=Math.floor(Math.random()*6+1);
+      var random6=Math.floor(Math.random()*6+1);
+      var headImg5="E:/桌面/chouqian/gaozhong/rw("+random5+").jpg";
+      var headImg6="E:/桌面/chouqian/gaozhong/wz("+random6+").jpg";
+      $("#img5").attr("src", headImg5);
+      $("#img6").attr("src", headImg6);
+    }
+    </script>
+
+
+
+
+
+<img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img7" style="width: 250px;position: absolute;top:630px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:650px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img8" style="width: 200;height: 170px;position: absolute;top:635px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:680px;left:1230px;"onclick="run4()">
+
+
+
+<script >
+    var timer4;
+  var open4 = false;
+  function stop(){
+    clearInterval(timer4);
+  }
+  function run4(){
+
+    if(!open4){
+      timer4 =setInterval(change4,60);
+      open4=true;
+
+      }else{
+      clearInterval(timer4);
+      open4=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img7").attr("src", "E:/桌面/chouqian/gaozhong/rw(5).jpg");
+      $("#img8").attr("src", "E:/桌面/chouqian/gaozhong/wz(5).jpg");
+      }
+    }
+    function change4(){
+      
+      var img7=$("#img7");
+      var img8=$("#img8");
+      var random7=Math.floor(Math.random()*5+1);
+      var random8=Math.floor(Math.random()*5+1);
+      var headImg7="E:/桌面/chouqian/gaozhong/rw("+random7+").jpg";
+      var headImg8="E:/桌面/chouqian/gaozhong/wz("+random8+").jpg";
+      $("#img7").attr("src", headImg7);
+      $("#img8").attr("src", headImg8);
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+<img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img11" style="width: 250px;position: absolute;top:910px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:910px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img12" style="width: 200;height: 170px;position: absolute;top:910px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:980px;left:1230px;"onclick="run6()">
+
+
+
+<script >
+    var timer6;
+  var open6 = false;
+  function stop(){
+    clearInterval(timer6);
+  }
+  function run6(){
+
+    if(!open6){
+      timer6 =setInterval(change6,70);
+      open6=true;
+
+      }else{
+      clearInterval(timer6);
+      open6=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img11").attr("src", "E:/桌面/chouqian/gaozhong/rw(4).jpg");
+      $("#img12").attr("src", "E:/桌面/chouqian/gaozhong/wz(4).jpg");
+      }
+    }
+    function change6(){
+      
+      var img11=$("#img11");
+      var img12=$("#img12");
+      var random11=Math.floor(Math.random()*4+1);
+      var random12=Math.floor(Math.random()*4+1);
+      var headImg11="E:/桌面/chouqian/gaozhong/rw("+random11+").jpg";
+      var headImg12="E:/桌面/chouqian/gaozhong/wz("+random12+").jpg";
+      $("#img11").attr("src", headImg11);
+      $("#img12").attr("src", headImg12);
+    }
+    </script>
+
+
+
+
+    <img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img13" style="width: 250px;position: absolute;top:1200px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:1200px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img14" style="width: 200;height: 170px;position: absolute;top:1200px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:1260px;left:1230px;"onclick="run7()">
+
+
+
+<script >
+    var timer7;
+  var open7 = false;
+  function stop(){
+    clearInterval(timer7);
+  }
+  function run7(){
+
+    if(!open7){
+      timer7 =setInterval(change7,80);
+      open7=true;
+
+      }else{
+      clearInterval(timer7);
+      open7=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img13").attr("src", "E:/桌面/chouqian/gaozhong/rw(3).jpg");
+      $("#img14").attr("src", "E:/桌面/chouqian/gaozhong/wz(3).jpg");
+      }
+    }
+    function change7(){
+      
+      var img13=$("#img13");
+      var img14=$("#img14");
+      var random13=Math.floor(Math.random()*3+1);
+      var random14=Math.floor(Math.random()*3+1);
+      var headImg13="E:/桌面/chouqian/gaozhong/rw("+random13+").jpg";
+      var headImg14="E:/桌面/chouqian/gaozhong/wz("+random14+").jpg";
+      $("#img13").attr("src", headImg13);
+      $("#img14").attr("src", headImg14);
+    }
+    </script>
+
+ 
+</script>
+
+
+
+
+    <img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img15" style="width: 250px;position: absolute;top:1500px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:1500px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img16" style="width: 200;height: 170px;position: absolute;top:1500px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:1550px;left:1230px;"onclick="run8()">
+
+
+
+<script >
+    var timer8;
+  var open8 = false;
+  function stop(){
+    clearInterval(timer8);
+  }
+  function run8(){
+
+    if(!open8){
+      timer8 =setInterval(change8,90);
+      open8=true;
+
+      }else{
+      clearInterval(timer8);
+      open8=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img15").attr("src", "E:/桌面/chouqian/gaozhong/rw(2).jpg");
+      $("#img16").attr("src", "E:/桌面/chouqian/gaozhong/wz(2).jpg");
+      }
+    }
+    function change8(){
+      
+      var img15=$("#img15");
+      var img16=$("#img16");
+      var random15=Math.floor(Math.random()*2+1);
+      var random16=Math.floor(Math.random()*2+1);
+      var headImg15="E:/桌面/chouqian/gaozhong/rw("+random15+").jpg";
+      var headImg16="E:/桌面/chouqian/gaozhong/wz("+random16+").jpg";
+      $("#img15").attr("src", headImg15);
+      $("#img16").attr("src", headImg16);
+    }
+    </script>
+
+
+
+
+
+ 
+
+
+    <img src="E:\桌面\chouqian\imgs/rw(0).jpg"  id="img17" style="width: 250px;position: absolute;top:1800px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:1800px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img18" style="width: 200;height: 170px;position: absolute;top:1800px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:1820px;left:1230px;"onclick="run9()">
+
+
+
+<script >
+    var timer9;
+  var open9 = false;
+  function stop(){
+    clearInterval(timer9);
+  }
+  function run9(){
+
+    if(!open9){
+      timer9 =setInterval(change9,100);
+      open9=true;
+
+      }else{
+      clearInterval(timer9);
+      open9=false
+      // $("#img5").attr("src", "E:/桌面/chouqian/imgs/rw(2).jpg");
+      $("#img17").attr("src", "E:/桌面/chouqian/gaozhong/rw(1).jpg");
+      $("#img18").attr("src", "E:/桌面/chouqian/gaozhong/wz(1).jpg");
+      }
+    }
+    function change9(){
+      
+      var img17=$("#img17");
+      var img18=$("#img18");
+      var random17=Math.floor(Math.random()*1+1);
+      var random18=Math.floor(Math.random()*1+1);
+      var headImg17="E:/桌面/chouqian/gaozhong/rw("+random17+").jpg";
+      var headImg18="E:/桌面/chouqian/gaozhong/wz("+random18+").jpg";
+      $("#img17").attr("src", headImg17);
+      $("#img18").attr("src", headImg18);
+    }
+    </script>
+
+
+
+
+ <img src="E:\桌面\chouqian\gaozhong/rw(8).jpg"  style="width: 250px;position: absolute;top:2100px;left:120px;">
+ <img src="E:\桌面\chouqian\xiaodi/jiany.jpg"  style="width: 250px;position: absolute;top:2100px;left:430px;">
+  <img src="E:\桌面\chouqian\wz/wz(0).jpg" id="img2" style="width: 200;height: 170px;position: absolute;top:2100px;left:770px;">
+<input type="button" class="coolButton" value="开始   /   暂停" style="position: absolute;width:120px;height:50px ;top:2140px;left:1230px;"onclick="run()">
+  <script >
+    var timer;
+  var open = false;
+  function stop(){
+    clearInterval(timer);
+  }
+    function run(){
+
+      if(!open){
+      timer =setInterval(change,100);
+      open=true;
+      }else{
+      clearInterval(timer);
+      open=false
+      $("#img2").attr("src", "E:/桌面/chouqian/gaozhong/wz(2).png");
+      // document.getElementById(src="E:/桌面/chouqian/wz/wz(7).png");
+      }
+    }
+  
+
+    function change(){
+      // var img1=$("#img1");
+      var img2=$("#img2");
+      var random=Math.floor(Math.random()*2+1);
+      var headImg="E:/桌面/chouqian/gaozhong/wz("+random+").png";
+      $("#img2").attr("src", headImg);
+    }
+      
+  </script>
+
+
+
+
+
+
+
+
+<script>
+    const buttons = document.querySelectorAll('.coolButton');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const audio = new Audio('E:/桌面/chouqian/dianji.mp3');
+        audio.play();
+      });
+    });
+  </script>
+
+
+
+<script>
+    let music = null;
+    const button1 = document.querySelectorAll('.coolButton');
+    button1.forEach(button => {
+      button.addEventListener('click', () => {
+        setTimeout(() => {
+          if (music &&!music.paused) {
+            music.pause();
+            music.currentTime = 0;
+          } else {
+            music = new Audio('E:/桌面/chouqian/bgm.mp3');
+            music.play();
+            music.loop = true;
+          }
+        }, 500);
+      });
+    });
+  </script>
+</body>
